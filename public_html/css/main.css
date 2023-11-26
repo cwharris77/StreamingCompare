@@ -1,0 +1,34 @@
+body {
+	background-color: #12263A;
+	margin: 0;
+	padding: 0;
+
+	color: #2095e4;
+}
+
+h1 {
+	font-size: 300%;
+	font-weight: bold;
+
+	font-family: monospace;
+}
+
+p {
+	font-size: 120%;
+	margin: 5px;
+}
+
+main {
+	margin: 0 10px;
+	text-align: left;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+
+	height: 15%;
+	width: 100%;
+
+	background-color: #C5D8D1;
+}
