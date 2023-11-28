@@ -76,14 +76,34 @@ ul {
 
   .mainlogos {    
     border-radius: 50%;
-    display: flex;
+    display: left;    
+      float: center;    
+      width: 15%;
+      height: 15%;     
     padding: 70px;
     margin: 50px;
     float: center;
     justify-content: space-between;
   }
-      
 
+      
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+   
+   img {
+     max-width: 100%;
+     max-height:100%;
+   }
+   
+   .text {
+     font-size: 30px;
+   }
+
+ 
   .upper-content > a {    
     float: center;    
     color: white;
@@ -95,6 +115,19 @@ ul {
     
   }
 
+  .upper-content > p{
+    display: inline-block;    
+    justify-content: space-between;
+    color: #f1f1f1;
+    font-weight: bold;
+
+  } 
+
+  figcaption {
+
+    color: #f1f1f1;
+  }
+
   .lower-content {    
     float: center;    
     color: white;
@@ -104,4 +137,38 @@ ul {
     float: center;
     justify-content: space-between;
   }
+  
+
+  .but1, .but2{    
+    background-color: #727472;         
+    color:white;
+    padding: 30px 50px;
+    text-align: center;
+    text-decoration: none;  
+    border-radius: 8px;
+    font-size: 30px;   
+    position: relative;
+    left: 500px; 
+
+  }
+
+.but1 {
+    margin-right: 300px; 
+  }
+        
+.but2 {
+    margin-right: 300px; 
+  }
+
+  .footer{
+    background-color: rgb(233, 227, 227);
+    color:black;
+    display: flex;
+    padding: 30px 50px;
+    text-align: center;        
     
+}      
+       
+.footer > p{
+  margin-left: 300px;  
+}

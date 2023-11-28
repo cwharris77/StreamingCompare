@@ -59,6 +59,7 @@ ul {
     color: white;    
     font-size: 20px;
    }
+   
   .container {
     display: grid;
     align-items: center; 
@@ -84,6 +85,6 @@ ul {
 }      
        
 .footer > p{
-  margin-right: 600px;
+  margin-left: 300px;
   
 }
