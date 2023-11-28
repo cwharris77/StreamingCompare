@@ -1,4 +1,4 @@
-img { 
+.banner { 
 	width: 30%;
 	height: auto;
 	display: block;
@@ -6,3 +6,85 @@ img {
 
 	background-color: transparent;
 }
+
+.imageContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 90%;
+	margin: auto;
+}
+
+.aboutImage {
+	width: 20%;
+	height: auto;
+
+	border-radius: 20px;
+}
+
+footer {
+/*	position: absolute;*/
+	bottom: 0;
+	width: 100%;
+
+	background-color: rgb(233, 227, 227);
+    color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+a { 
+	color: black;
+}
+
+h1 {
+	font-size: 300%;
+	font-weight: bold;
+
+	font-family: monospace;
+}
+
+p {
+	font-size: 120%;
+	margin: 5px;
+}
+
+main {
+	margin: 10px 10px 40px 10px;
+	text-align: left;
+
+}
+
+#mainHeader {
+	font-size: 500%;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    padding: 16px;
+
+    align-items: center;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    height: 200px;
+    width: auto;
+    display: block;
+}
+
+

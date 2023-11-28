@@ -3,27 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/news.css">
+
   <title>News Page</title>
 </head>
 <body>
+  <header>
+    <img src="img/logo.jpg" class = "logo" alt="logo" width="160" height="80">
+    
+  <ul>
+    <!-- <li><a href="about.html">About us</a></li> -->
+    <li><a href="platform.html">Platforms comparison</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="choose.html">Choose your serivce</li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <!-- <li><a href="news.html">News</a></li> -->
+  </ul>
+</header>
   <main>
-    <!-- <h1>News</h1> -->
+    <h1 id="mainHeader">News</h1>
 
-    <img src="img/news_banner.png" alt="Streaming Service Comparison Image">
+    <!-- <img class="banner" src="img/news_banner.png" alt="Streaming Service Comparison Image"> -->
 
     <p>In the ever-expanding landscape of digital entertainment, choosing the right streaming service has become a crucial decision for consumers seeking the best in movies, TV shows, and original content. Our comprehensive streaming service comparison brings you the latest insights into the leading platforms, weighing factors such as content libraries, subscription plans, user experience, and exclusive offerings. Stay informed as we break down the pros and cons, helping you navigate the vast array of options and make informed choices in the dynamic world of online streaming. Whether you're a binge-watcher, a cinephile, or a casual viewer, our news page is your go-to source for staying ahead in the streaming revolution.</p>
 
     <h1>About Streaming Platforms</h1>
+    <div class="imageContainer">
+      <img class="aboutImage" src="img/paramount_main_page.png" alt="Paramount+ Images">
+       <img class="aboutImage" src="img/netflix_main_page.png" alt="News from netflix">
+       <img class="aboutImage" src="img/hulu_main_page.png" alt="Titles in every plan on Hulu">
+    </div>
+
     <h1>Latest Releases</h1>
+
+    <div class="gallery" id="imageGallery">
+      <div class="gallery-item">
+          <img src="img/wwII.jpeg" alt="WWII: From the Frontlines Cover ">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/consecration.jpeg" alt="Consecration cover">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/mayDecember.jpeg" alt="May December cover">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/frasier.jpeg" alt="Frasier cover">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/loki.jpeg" alt="Loki cover">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/deepWater.jpeg" alt="Deep Water cover">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/southPark.jpeg" alt="South Park cover">
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <a href="">About Us</a>
-    <a href="">Contact</a>
-    <a href="">Sign Up</a>
+  <footer class="footer">
+    <p><a href="about.html">About Us</a></p>
+    <p><a href="mailto:webmaster@example.com">Contact</a></p>
+    <p><a href="service.html">Sign Up</a></p>
   </footer>
 </body>
 </html>
