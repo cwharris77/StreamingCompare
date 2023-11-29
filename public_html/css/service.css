@@ -1,143 +1,149 @@
 body{
-	font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     background-color: white; 
 }
-        .left-aligned-header {
-        padding: 20px; 
-        background-color:  #08224D; 
-        color: white; 
-        font-size: 36px;
 
-    }
+/* header*/
+.left-aligned-header {
+padding: 20px; 
+background-color:  #08224D; 
+color: white; 
+font-size: 36px;
 
-    .titleBox {
-        color: #FEDE5A;
-    display: flex;
-    align-items: center;
+}
+
+.titleBox {
+color: #FEDE5A;
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-between;
+margin-bottom:10px
+}
+
+/* This is the message box's css*/
+    .message-box {
+    background-color: #08224D;
+    color: #FEDE5A; 
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.message-box input[type="text"],
+.message-box textarea {
+    color: #FEDE5A;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.message-box input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #FEDE5A;
+    background-color: #08224D;
+    border: none;
+    border-radius: 5px;
+    background-color: #394e70; /* Primary button color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.message-box input[type="submit"]:hover {
+    background-color: #6ebe56;
+}
+
+/* This is the pro's and con's css*/
+.container {
+    display: flex;  
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.text-box {
+    color: #08224D;
+    border: 1px solid #6a7a94;
+    padding: 20px;
+    margin-top: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.text-box ul {
+    list-style-type: disc; /* Default style, can be changed */
+    padding-left: 20px; /* Indent bullet points */
+}
+
+.text-box li {
+    margin-bottom: 10px; /* Add space between bullet points */
+}
+
+/* This is the table's css */
+table {
+    color: #08224D;
+    margin: 20px;
+    padding: 20px;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom:10px
-  
+    border-collapse: collapse;
 }
-    /* This is the message box's css*/
-        .message-box {
-        background-color: #08224D;
-        color: #FEDE5A; 
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-    }
-    
-    .message-box input[type="text"],
-    .message-box textarea {
-        color: #FEDE5A;
-        width: 95%;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid #ccc;
-    }
-    
-    .message-box input[type="submit"] {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        color: #FEDE5A;
-        background-color: #08224D;
-        border: none;
-        border-radius: 5px;
-        background-color: #394e70; /* Primary button color */
-        border-radius: 4px;
-        transition: background-color 0.3s ease-in-out;
-
-    }
-    
-    .message-box input[type="submit"]:hover {
-        background-color: #6ebe56;
-    }
-
-    /* This is the pro's and con's css*/
-    .container {
-        display: flex;  
-        justify-content: space-around;
-        margin: 20px;
-    }
-
-    .text-box {
-        color: #08224D;
-        border: 1px solid #6a7a94;
-        padding: 20px;
-        margin-top: 10px;
-        width: 80%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .text-box h2 {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .text-box ul {
-        list-style-type: disc; /* Default style, can be changed */
-        padding-left: 20px; /* Indent bullet points */
-    }
-    
-    .text-box li {
-        margin-bottom: 10px; /* Add space between bullet points */
-    }
-
-    /* This is the table's css */
-    table {
-        color: #08224D;
-        margin: 20px;
-        padding: 20px;
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #6a7a94;
-        padding: 5px;
-        text-align: center;
-    }
-    th {
-        background-color: #6a7a94;
-    }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    .button{
-        display: inline-block;
-        padding: 10px 15px;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        color: #FEDE5A;
-        background-color: #08224D;
-        border: none;
-        border-radius: 5px;
-        background-color: #394e70; /* Primary button color */
-        border-radius: 4px;
-        transition: background-color 0.3s ease-in-out;
-    }
-    .button:hover, .button:focus {
-    background-color: #6ebe56; /* Darker shade on hover/focus */
+th, td {
+    border: 1px solid #6a7a94;
+    padding: 5px;
+    text-align: center;
 }
+th {
+    background-color: #6a7a94;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button */
+.button{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #FEDE5A;
+    background-color: #08224D;
+    border: none;
+    border-radius: 5px;
+    background-color: #394e70; /* Primary button color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+.button:hover, .button:focus {
+background-color: #6ebe56; /* Darker shade on hover/focus */
+}
+
+/* Footer */
 .footer{
-    background-color: rgb(233, 227, 227);
-    color:black;
-    display: flex;
-    padding: 30px 50px;
-    text-align: center; 
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap;       
+background-color: rgb(233, 227, 227);
+color:black;
+display: flex;
+padding: 30px 50px;
+text-align: center; 
+justify-content: center; /* Center items horizontally */
+flex-wrap: wrap;       
 }      
-       
+    
 .footer > p{
-  margin: 10px;
-  flex: 1; 
-  
+margin: 10px;
+flex: 1; 
+
 }
