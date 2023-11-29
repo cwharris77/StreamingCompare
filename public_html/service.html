@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Info Page</title>
     <link href="css/infoExample.css" rel="stylesheet">   
-    <script type="text/javascript" src="service.js"></script>
 </head>
 <body>
     <!-- Header-->>
@@ -128,6 +127,22 @@
         <p><a href="mailto:webmaster@example.com"> Contact </p>
         <p><a href="news.html">News</a></p>
       </footer>
-    
+    <script>  
+        /**
+         * This method has an input and alert is called 
+         */
+        document.getElementById('messageForm').onsubmit = function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+            
+            alert('Thank you, ' + name + '. Your message: "' + message + '" has been sent!');
+            
+            // clear the form fields after submission
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        };
+    </script>
 </body>
 </html>
