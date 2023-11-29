@@ -1,0 +1,37 @@
+div.scroll-container {
+  background-color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  position: relative;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrow {
+  /*position: absolute;
+  top: 50%;
+  transform: translateY(-50%);*/
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: none;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.main-container {
+  display: flex;
+}

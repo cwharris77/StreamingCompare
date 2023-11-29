@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/library.css">
+
+  <script defer type="text/javascript" src="js/client.js"></script>
+</head>
+<body>
+
+<div class="main-container">
+  <button class="arrow arrow-left" onmousedown="startScrolling(-1)" onmouseup="stopScrolling()">&#9665;</button>
+
+  <div id="scroll-container" class="scroll-container">
+    <img src="img/consecration.jpeg" alt="Image 1">
+    <img src="img/consecration.jpeg" alt="Image 2">
+    <img src="img/Netflix.png" alt="Image 3">
+    <img src="img/consecration.jpeg" alt="Image 4">
+    <img src="img/consecration.jpeg" alt="Image 5">
+  </div>
+
+  <button class="arrow arrow-right" onmousedown="startScrolling(1)" onmouseup="stopScrolling()">&#9655;</button>
+</div>
+
+<script>
+  let scrollingInterval;
+
+  function startScrolling(direction) {
+    scrollingInterval = setInterval(() => {
+      const container = document.getElementById('scroll-container');
+      const imageWidth = container.clientWidth; // Width of the container
+      const scrollAmount = direction * (imageWidth + 20); // 20 is the sum of left and right padding
+      container.scrollLeft += scrollAmount;
+    }, 50); // Adjust the interval as needed
+  }
+
+  function stopScrolling() {
+    clearInterval(scrollingInterval);
+  }
+</script>
+
+</body>
+</html>
