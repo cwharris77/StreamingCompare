@@ -9,6 +9,20 @@
 	main:not(p) {
 	background-color: white;
 	}
+	a.l:link, header.a:visited {
+	background-color: #08224D;
+	color: #FEDE5A;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	}
+	a.l:hover, header.a:active {
+	background-color: green;
+	}
+	a.l {
+	margin-left: 150px;
+	}
 	h1 {
 	font-size: 50px;
 	color: #FEDE5A;
