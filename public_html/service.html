@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Info Page</title>
+    <link href="css/infoExample.css" rel="stylesheet">    
+</head>
+<body>
+    
+        <header class="left-aligned-header">
+            <div class="titleBox">
+                <h1>Netflix</h1>
+            <p style="font-size: 48px;">★★★★☆</p>
+            </div>
+            <div class="container" style="font-size: 16px;">
+                <span>Netflix is a streaming service that offers a wide variety of TV shows, movies, anime, documentaries, and even a large library of original content.
+                    From new and old genres, Netflix has an extensive library of shows. Netflix also has international content such Korean dramas and teenovelas. 
+                     Some popular shows are:
+                    <ul>
+                        <li>New Girl</li>
+                        <li>Jane the Virgin</li>
+                        <li>Filmore Girls</li>
+                        <li>Steinfield</li>
+                    </ul>
+                    Netflix is compatiable with all kinds of devices including products, Andriod products, 
+                    Windows products, AppleTV, Smart TVs, and more! 
+                </span>
+            </div>
+        </header>
+
+    <div class="container">
+        <div class="text-box">
+            <h2>PROS</h2>
+            <ul>
+                <li>Easy to use interface</li>
+                <li>Offers a free trial</li>
+                <li>Highquality original programming</li>
+                <li>Offline downloads</li>
+                <li>Offers a variety of shows from Korean Dramas, Anime, documentaries, movies, etc</li>
+                <li>Allows for chilren profiles for safe and familyfriendly viewing</li>
+            </ul>
+        </div>
+        
+        <div class="text-box">
+            <h2>CONS</h2>
+            <ul>
+                <li>Ad-based tier</li>
+                <li>Shows have certain availability</li>
+                <li>Limited Region Selections</li>
+                <li>Data Cap Consumption</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- this is an information table -->
+    <table>
+        <tr>
+            <th></th>
+            <th>Standard Plan with Ads</th>
+            <th>Standard Plan</th>
+            <th>Premium Plan</th>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>$6.99/mo.</td>
+            <td>$15.49/mo.</td>
+            <td>$19.99/mo.</td>
+        </tr>
+        <tr>
+            <td>Resoltion</td>
+            <td>1080p</td>
+            <td>1080p</td>
+            <td>4K + HDR</td>
+        </tr>
+        <tr>
+            <td>Allows for Downloads</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Unique features</td>
+            <td>
+                <ul>
+                    <li>Certain movies and TV shows available</li>
+                    <li>Supports only 2 devices at a time</li>
+                    <li>Watch in Full HD</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Unlimited ad-free movies and TV shows</li>
+                    <li>Supports only 2 devices at a time</li>
+                    <li>Watch in Full HD</li>
+                    <li>Option to add 1 extra member who doesn't live with you</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Unlimited ad-free movies and TV shows</li>
+                    <li>Supports only 4 devices at a time</li>
+                    <li>Watch in Ultra HD</li>
+                    <li>Option to add 2 extra member who doesn't live with you</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <a href="https://help.netflix.com/en/node/24926" class="button">View Plans</a>
+    </div>
+    
+
+    <!-- this is the message box -->
+    <div class="message-box">
+        <h2>Leave a Message</h2>
+        <form id="messageForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <p><a href="about.html"> About us</a></p>    
+        <p><a href="mailto:webmaster@example.com"> Contact </p>
+        <p><a href="news.html">News</a></p>
+      </footer>
+    
+    <script>
+        document.getElementById('messageForm').onsubmit = function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+            
+            alert('Thank you, ' + name + '. Your message: "' + message + '" has been sent!');
+            
+            // clear the form fields after submission
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        };
+        </script>
+</body>
+</html>
