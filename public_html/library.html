@@ -9,37 +9,141 @@
   <script defer type="text/javascript" src="js/client.js"></script>
 </head>
 <body>
+  <header>
+    <img src="img/logo.jpg" class = "logo" alt="logo" width="160" height="80">
+    
+    <ul>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="comparison.html">Platforms comparison</a></li>
+      <!-- <li><a href="library.html">Library</a></li> -->
+      <li><a href="serivce.html">Choose your serivce</li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+    </ul>
+  </header>
 
-<div class="main-container">
-  <button class="arrow arrow-left" onmousedown="startScrolling(-1)" onmouseup="stopScrolling()">&#9665;</button>
+  <main>
+    <h1>Content Library</h1>
+    <h2>Netflix</h2>
+    <div class="main-container" id="netflix-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('netflix-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
 
-  <div id="scroll-container" class="scroll-container">
-    <img src="img/consecration.jpeg" alt="Image 1">
-    <img src="img/consecration.jpeg" alt="Image 2">
-    <img src="img/Netflix.png" alt="Image 3">
-    <img src="img/consecration.jpeg" alt="Image 4">
-    <img src="img/consecration.jpeg" alt="Image 5">
-  </div>
+      <div id="netflix-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
 
-  <button class="arrow arrow-right" onmousedown="startScrolling(1)" onmouseup="stopScrolling()">&#9655;</button>
-</div>
+      <button class="arrow arrow-right" onmousedown="startScrolling('netflix-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
 
-<script>
-  let scrollingInterval;
+    <h2>Hulu</h2>
+    <div class="main-container" id="hulu-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('hulu-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
 
-  function startScrolling(direction) {
-    scrollingInterval = setInterval(() => {
-      const container = document.getElementById('scroll-container');
-      const imageWidth = container.clientWidth; // Width of the container
-      const scrollAmount = direction * (imageWidth + 20); // 20 is the sum of left and right padding
-      container.scrollLeft += scrollAmount;
-    }, 50); // Adjust the interval as needed
-  }
+      <div id="hulu-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
 
-  function stopScrolling() {
-    clearInterval(scrollingInterval);
-  }
-</script>
+      <button class="arrow arrow-right" onmousedown="startScrolling('hulu-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
 
+    <h2>Disney+</h2>
+    <div class="main-container" id="disney-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('disney-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
+
+      <div id="disney-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
+
+      <button class="arrow arrow-right" onmousedown="startScrolling('disney-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
+
+    <h2>Apple TV</h2>
+    <div class="main-container" id="apple-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('apple-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
+
+      <div id="apple-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
+
+      <button class="arrow arrow-right" onmousedown="startScrolling('apple-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
+
+    <h2>Paramount+</h2>
+    <div class="main-container" id="paramount-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('paramount-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
+
+      <div id="paramount-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
+
+      <button class="arrow arrow-right" onmousedown="startScrolling('paramount-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
+
+    <h2>Amazon Prime</h2>
+    <div class="main-container" id="amazon-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('amazon-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
+
+      <div id="amazon-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
+
+      <button class="arrow arrow-right" onmousedown="startScrolling('amazon-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
+
+    <h2>HBO Max</h2>
+    <div class="main-container" id="hbo-div">
+      <button class="arrow arrow-left" onmousedown="startScrolling('hbo-container', -1)" onmouseup="stopScrolling()">&#9665;</button>
+
+      <div id="hbo-container" class="scroll-container">
+        <img src="img/consecration.jpeg" alt="Image 1">
+        <img src="img/consecration.jpeg" alt="Image 2">
+        <img src="img/Netflix.png" alt="Image 3">
+        <img src="img/consecration.jpeg" alt="Image 4">
+        <img src="img/consecration.jpeg" alt="Image 5">
+      </div>
+
+      <button class="arrow arrow-right" onmousedown="startScrolling('hbo-container', 1)" onmouseup="stopScrolling()">&#9655;</button>
+    </div>
+
+    <script>
+      let scrollingInterval;
+
+      function startScrolling(element, direction) {
+        scrollingInterval = setInterval(() => {
+          const container = document.getElementById(element);
+          const scrollAmount = direction * 50; 
+          container.scrollLeft += scrollAmount;
+        }, 50); // Adjust the interval as needed
+      }
+
+      function stopScrolling() {
+        clearInterval(scrollingInterval);
+      }
+    </script>
+  </main>
 </body>
 </html>
