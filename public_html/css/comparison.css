@@ -20,6 +20,9 @@
 	a.l:hover, header.a:active {
 	background-color: green;
 	}
+	a.l:visited {
+	color: #FEDE5A;	
+	}
 	a.l {
 	margin-left: 150px;
 	}
