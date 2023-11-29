@@ -13,7 +13,7 @@ h2 {
 
 
 div.scroll-container {
-  background-color: #333;
+  background-color: #FEDE5A;
   overflow: hidden;
   white-space: nowrap;
   padding: 10px;
@@ -49,4 +49,8 @@ div.scroll-container img {
 
 .main-container {
   display: flex;
+}
+
+div > img {
+  height: 400px;
 }
