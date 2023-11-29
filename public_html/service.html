@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Info Page</title>
-    <link href="css/service.css" rel="stylesheet">    
+    <link href="css/infoExample.css" rel="stylesheet">   
+    <script type="text/javascript" src="service.js"></script>
 </head>
 <body>
-    
+    <!-- Header-->>
         <header class="left-aligned-header">
             <div class="titleBox">
                 <h1>Netflix</h1>
-            <p style="font-size: 48px;">★★★★☆</p>
-            </div>
-            <div class="container" style="font-size: 16px;">
-                <span>Netflix is a streaming service that offers a wide variety of TV shows, movies, anime, documentaries, and even a large library of original content.
-                    From new and old genres, Netflix has an extensive library of shows. Netflix also has international content such Korean dramas and teenovelas. 
-                     Some popular shows are:
-                    <ul>
-                        <li>New Girl</li>
-                        <li>Jane the Virgin</li>
-                        <li>Filmore Girls</li>
-                        <li>Steinfield</li>
-                    </ul>
-                    Netflix is compatiable with all kinds of devices including products, Andriod products, 
-                    Windows products, AppleTV, Smart TVs, and more! 
-                </span>
+            <p>★★★★☆</p>
             </div>
         </header>
+    <!-- Description-->>
+    <div class="container">
+        <span>Netflix is a streaming service that offers a wide variety of TV shows, movies, anime, documentaries, and even a large library of original content.
+            From new and old genres, Netflix has an extensive library of shows. Netflix also has international content such Korean dramas and teenovelas. 
+             Some popular shows are:
+            <ul>
+                <li>New Girl</li>
+                <li>Jane the Virgin</li>
+                <li>Filmore Girls</li>
+                <li>Steinfield</li>
+            </ul>
+            Netflix is compatiable with all kinds of devices including products, Andriod products, 
+            Windows products, AppleTV, Smart TVs, and more! 
+        </span>
+    </div>
 
+    <!-- Pros and Cons lists -->>
     <div class="container">
         <div class="text-box">
             <h2>PROS</h2>
@@ -82,31 +85,27 @@
         <tr>
             <td>Unique features</td>
             <td>
-                <ul>
-                    <li>Certain movies and TV shows available</li>
-                    <li>Supports only 2 devices at a time</li>
-                    <li>Watch in Full HD</li>
-                </ul>
+                <li>Certain movies and TV shows available</li>
+                <li>Supports only 2 devices at a time</li>
+                <li>Watch in Full HD</li>
+    
             </td>
             <td>
-                <ul>
-                    <li>Unlimited ad-free movies and TV shows</li>
-                    <li>Supports only 2 devices at a time</li>
-                    <li>Watch in Full HD</li>
-                    <li>Option to add 1 extra member who doesn't live with you</li>
-                </ul>
+                <li>Unlimited ad-free movies and TV shows</li>
+                <li>Supports only 2 devices at a time</li>
+                <li>Watch in Full HD</li>
+                <li>Option to add 1 extra member who doesn't live with you</li>
             </td>
             <td>
-                <ul>
-                    <li>Unlimited ad-free movies and TV shows</li>
-                    <li>Supports only 4 devices at a time</li>
-                    <li>Watch in Ultra HD</li>
-                    <li>Option to add 2 extra member who doesn't live with you</li>
-                </ul>
+                <li>Unlimited ad-free movies and TV shows</li>
+                <li>Supports only 4 devices at a time</li>
+                <li>Watch in Ultra HD</li>
+                <li>Option to add 2 extra member who doesn't live with you</li>
             </td>
         </tr>
     </table>
 
+    <!-- View Plans button-->>
     <div class="container">
         <a href="https://help.netflix.com/en/node/24926" class="button">View Plans</a>
     </div>
@@ -130,19 +129,5 @@
         <p><a href="news.html">News</a></p>
       </footer>
     
-    <script>
-        document.getElementById('messageForm').onsubmit = function(event) {
-            event.preventDefault();
-            var name = document.getElementById('name').value;
-            var message = document.getElementById('message').value;
-            
-            alert('Thank you, ' + name + '. Your message: "' + message + '" has been sent!');
-            
-            // clear the form fields after submission
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('message').value = '';
-        };
-        </script>
 </body>
 </html>
