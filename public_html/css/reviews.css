@@ -50,3 +50,9 @@ h3 {
 	color: #08224D;
 	font-style: italic;
 }
+
+footer {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+}
